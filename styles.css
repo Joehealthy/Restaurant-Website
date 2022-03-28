@@ -1,0 +1,134 @@
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+header{
+	background-image: url("Images/bg.png");
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+	
+}
+
+a{
+	Color: white;
+	text-decoration: none;
+	
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 1rem;
+	height: 100%;	
+	width: 1000px;
+	max-width: 100%;
+}
+
+nav{
+	padding: 0.5rem 0;
+}
+
+.pre-nav{
+	font-size: 1.7rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.logo{
+	color: #026E78;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+	
+}
+
+nav li{
+	flex: 1 auto;
+}
+
+nav li a{ 
+	background-color: #2d99A4;
+	display: block;
+	padding: 1rem 2rem; 
+	text-align: center;
+}
+
+nav a.active{
+	background-color: #fff;
+	color: #026E78;
+	font-weight: bold;
+	
+}
+
+nav a.highlight{
+	Background-color: #026E78;
+	color: #fff;
+}
+nav a:hover{
+	opacity: 0.9;
+	
+}
+
+.content{
+	margin-top: 5rem;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+
+.content h1{
+	background-color:  #026E78;
+	color: white;
+	display: inline-block;
+	padding: 1rem;
+	font-weight: 200;
+	
+}
+
+.white-link{
+	background-color: #fff;
+	color: #2d99A4;
+	padding: 1rem;
+	
+}
+
+.teal-link{
+	background-color: #2d99A4;
+	color: #fff;
+	padding: 1rem;margin-top: 2rem;
+	
+}
+
+@media screen and (max-width: 768px){
+	.pre-nav{
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	nav ul{
+		
+	}
+	
+	.content{
+		font-size: 1.5rem;
+	}
+}
